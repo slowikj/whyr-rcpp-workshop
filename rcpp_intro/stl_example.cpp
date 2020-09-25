@@ -21,7 +21,7 @@ StringVector getUniqueS(StringVector v) {
   for(const auto& elem: v) {
     std::string convertedElem = Rcpp::as<std::string>(elem);
     if(hs.find(convertedElem) == hs.end()) {
-      hs[convertedElem] = 0;
+      hs[convertedElem] = 1;
     } else {
       ++hs[convertedElem];
     }
