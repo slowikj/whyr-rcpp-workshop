@@ -11,6 +11,9 @@ struct Employee {
       experience_(experience[0]),
       salary_(salary[0]) {};
   
+  void raiseSalary() {
+    salary_ = salary_ + 1000; 
+  }
 };
 
 //[[Rcpp::export]]
@@ -19,5 +22,9 @@ NumericVector createEmployee(CharacterVector name,
                     NumericVector salary) {
   Employee x(name, experience, salary);
   x.raiseSalary();
-  return x.salary_;
+  return NumericVector{x.salary_};
 }
+
+struct Manager : public Employee {
+  
+};
