@@ -60,4 +60,18 @@ computeTheSum()
 createVector(5, 10)
 getValue(c(9, 10, 123), 2)
 getFibonacciRcpp(10)
+
+fibonacciR <- function(n) {
+  res <- rep(0, n);
+  res[1] = 0
+  res[2] = 1
+  for (i in 3:n) {
+    res[i] = res[i - 1] + res[i - 2]
+  }
+  res
+}
+
+microbenchmark::microbenchmark(r=fibonacciR(30),
+                               rcpp=getFibonacciRcpp(30))
+
 */
