@@ -71,7 +71,8 @@ fibonacciR <- function(n) {
   res
 }
 
-microbenchmark::microbenchmark(r=fibonacciR(30),
-                               rcpp=getFibonacciRcpp(30))
+library(microbenchmark)
+microbenchmark(r=fibonacciR(30),
+               rcpp=getFibonacciRcpp(30))
 
 */
