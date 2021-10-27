@@ -1,7 +1,10 @@
-# whyr-rcpp-workshop
+# How to make your code fast - R and C++ integration using Rcpp
 
-Authors: Jadwiga Słowik, Dominik Rafacz, Mateusz Bąkała
-Description
+## Authors
+
+Jadwiga Słowik, Dominik Rafacz, Mateusz Bąkała
+
+## Description
 
 Rcpp is an R package that facilitates performing more efficient computations by using C++ and provides wrappers for R internals such as vectors and lists. Due to the seamless C++ and R API integration, Rcpp gives the opportunity to export C++ code to R conveniently and, thus, to take advantage of the C++ high performance and idiomatic high-level R interface.
 
