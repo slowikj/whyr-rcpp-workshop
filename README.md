@@ -2,7 +2,7 @@
 
 ## Authors
 
-Jadwiga Słowik, Dominik Rafacz, Mateusz Bąkała
+Jadwiga Słowik, Dominik Rafacz, Laura Bąkała
 
 ## Description
 
